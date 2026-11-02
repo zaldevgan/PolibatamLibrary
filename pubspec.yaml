@@ -1,0 +1,47 @@
+name: polibatam_library_mobile
+description: "Aplikasi Mobile Perpustakaan Politeknik Negeri Batam - SIPP & Repository"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management (Riverpod 2.x - Clean & Modular)
+  flutter_riverpod: ^2.5.1
+
+  # Otentikasi & Browser Launcher Resmi (Android, iOS & Web)
+  url_launcher: ^6.3.0
+  flutter_secure_storage: ^10.3.4
+
+  # Networking & REST API Client
+  dio: ^5.4.1
+
+  # E-Book Reader Engine (PDF & EPUB)
+  syncfusion_flutter_pdfviewer: ^33.2.13
+  epub_view: ^3.0.0
+
+  # UI Helper, QR Kartu Anggota & Font
+  qr_flutter: ^4.1.0
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.3.1
+  intl: ^0.19.0
+  path_provider: ^2.1.2
+  cupertino_icons: ^1.0.6
+
+dependency_overrides:
+  html: 0.15.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
